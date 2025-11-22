@@ -68,7 +68,7 @@ class DataProcessing:
                     'Predictive_Maintenance_Score', 'Error_Rate_%','Year', 'Month', 'Day', 'Hour'
                 ]
 
-            X = self.df[features]
+            X = self.df[self.features]
             y = self.df['Efficiency_Status']
 
             scaler = StandardScaler()
@@ -80,6 +80,8 @@ class DataProcessing:
             joblib.dump(X_test, X_TEST_PATH)
             joblib.dump(y_train,y_TRAIN_PATH)
             joblib.dump(y_test, y_TEST_PATH)
+
+            joblib.dump(scaler, SCALER_PATH)
 
             logger.info("Data scaled, splitted and saved data successfully.")
         

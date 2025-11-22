@@ -10,12 +10,14 @@ X_TRAIN_PATH = os.path.join(PROCESSED_DATA_PATH, "X_train.pkl")
 X_TEST_PATH = os.path.join(PROCESSED_DATA_PATH, "X_test.pkl")
 y_TRAIN_PATH = os.path.join(PROCESSED_DATA_PATH, "y_train.pkl")
 y_TEST_PATH = os.path.join(PROCESSED_DATA_PATH, "y_test.pkl")
+SCALER_PATH = os.path.join(PROCESSED_DATA_PATH, "scaler.pkl")
 
 # load path
 X_TRAIN_LOAD_PATH = 'artifacts/processed/X_train.pkl'
 X_TEST_LOAD_PATH = 'artifacts/processed/X_test.pkl'
 y_TRAIN_LOAD_PATH = 'artifacts/processed/y_train.pkl'
 y_TEST_LOAD_PATH = 'artifacts/processed/y_test.pkl'
+SCALER_LOAD_PATH = 'artifacts/processed/scaler.pkl'
 
 # Model Training
 MODEL_PATH = "artifacts/models"

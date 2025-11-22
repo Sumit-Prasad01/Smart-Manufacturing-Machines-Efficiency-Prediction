@@ -23,7 +23,7 @@ class Loader:
             raise CustomException("Error while loading and reading data", e)
 
     @staticmethod
-    def load_processed_data(X_train_path : str , X_test_path : str , y_train_path : str , y_test_path : str ):
+    def load_processed_data(X_train_path : str , X_test_path : str , y_train_path : str , y_test_path : str, Scaler_path : str = SCALER_LOAD_PATH ):
         """Load processed train-test data from pickle files."""
         try:
             logger.info("Loading processed data...")
@@ -32,6 +32,7 @@ class Loader:
             X_test = joblib.load(X_test_path)
             y_train = joblib.load(y_train_path)
             y_test = joblib.load(y_test_path)
+            scaler = joblib.load(Scaler_path)
 
             logger.info("Processed data loaded successfully.")
             return X_train, X_test, y_train, y_test
