@@ -5,3 +5,5 @@ kagglehub
 seaborn
 scikit-learn
 joblib
+xgboost
+flask
