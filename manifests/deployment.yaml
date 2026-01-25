@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: mlops-app
-        image: # Image name from GCP
+        image: sumit017/gitops-project:latest
         ports:
         - containerPort: 5000
