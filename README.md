@@ -46,15 +46,20 @@ Smart-Manufacturing-Machines-Efficiency-Prediction/
 │
 ├── artifacts/                  # Trained models & preprocessors
 ├── notebooks/                  # Jupyter notebooks (EDA & experiments)
+├── config/                  
+├── manifests/                  # Kubernetes manifest
+├── pipeline/                  
 ├── src/
+│   ├── data_ingestion.py
 │   ├── data_processing.py
 │   ├── model_training.py
-│   ├── prediction_pipeline.py
-│   └── app.py                  # Flask app
-│
+│   ├── logger.py
+│   └── custom_exception.py
+├── templates/                  
+├── utils/                      # Helper functions
+├── application.py              # Flask App
 ├── Dockerfile
-├── Jenkinsfile
-├── deployment.yaml             # Kubernetes manifest
+├── Jenkinsfile         
 ├── requirements.txt
 ├── setup.py
 └── README.md
